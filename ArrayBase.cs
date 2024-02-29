@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _3_3
+namespace _3_4
 {
     public abstract class ArrayBase : IArrayBase, IPrinter
     {
