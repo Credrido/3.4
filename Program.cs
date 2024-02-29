@@ -33,11 +33,10 @@ namespace _3_3
 
             Console.WriteLine();
 
-            IPrinter[] arraysP = new IPrinter[3];
-
-            arraysP[0] = new DaysOfWeek();
-            arraysP[1] = new Onedimensional(randif);
-            arraysP[2] = new Twodimensional(randif);
+            IPrinter[] arraysP = new IPrinter[2];
+            
+            arraysP[0] = new Onedimensional(randif);
+            arraysP[1] = new Twodimensional(randif);
 
             foreach (IPrinter arr in arraysP)
             {
