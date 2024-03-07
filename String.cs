@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +8,20 @@ namespace ConsoleApp21
 {
     class String : RandomType<string>
     {
-        string[] bukvi = new string[] { "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l"};
-
         public override string Randomise()
         {
-            string randomBukva = bukvi[random.Next(0, 15)];
+            string letters = "qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбю";
 
-            return randomBukva;
+            int length = 10;
+
+            char[] chars = new char[length];
+
+            for(int i =0; i < length; i++)
+            {
+                chars[i] = letters[random.Next(0, letters.Length)];
+            }
+
+            return new string(chars);
         }
     }
 }
